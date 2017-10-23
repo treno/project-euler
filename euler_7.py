@@ -2,10 +2,10 @@
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13 we can see that the 6th prime is 13.
 What is the 10,001st prime number?
 """
-# arbitrary upper limit we'll use when searching for the desired prime
-LIMIT = 1000000
 # desired prime to find
 GOAL = 10001
+# arbitrary upper limit we'll use when searching for the desired prime
+LIMIT = GOAL * (GOAL // 100)
 # we store numbers and their "primeness" in a dictionary using boolean values
 flags = {}
 # we store all prime numbers we find in a list

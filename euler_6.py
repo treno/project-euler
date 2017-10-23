@@ -9,6 +9,9 @@ NUMBERS = 100
 sum_of_squares = 0
 sum_of_numbers = 0
 
+# calculate the sum of the squares and the sum of each number in range
+# we then square the sum of this second number and subtract the first number from it
+# to get our answer
 for i in range(NUMBERS + 1):
     sum_of_squares += i * i
     sum_of_numbers += i
